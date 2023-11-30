@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -60,6 +61,7 @@ public class Enemy : MonoBehaviour
         HandleBehaviour();       
     }
 
+    Controller controller;
     /// <summary>
     /// Description:
     /// Standard Unity function called once before the first call to Update
@@ -77,6 +79,7 @@ public class Enemy : MonoBehaviour
                 followTarget = GameManager.instance.player.transform;
             }
         }
+        controller=FindObjectOfType<Controller>();
     }
 
     /// <summary>
@@ -112,6 +115,17 @@ public class Enemy : MonoBehaviour
     {
         AddToScore();
         IncrementEnemiesDefeated();
+        IncreaseMoveSpeed();
+    }
+
+    private void IncreaseMoveSpeed()
+    {
+        float maxSpeed = 25f;
+        if (maxSpeed > moveSpeed)
+        {
+            controller.moveSpeed += 0.2f;
+        }
+
     }
 
     /// <summary>

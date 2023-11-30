@@ -79,6 +79,10 @@
     <Compile Include="Assets\Scripts\Utility\ScoreReseter.cs" />
     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\CursorChanger.cs" />
+    <Compile Include="Assets\Scripts\Extra\SpeedDisplay.cs" />
+    <Compile Include="Assets\Scripts\Extra\LivesDisplay.cs" />
+    <Compile Include="Assets\Scripts\Extra\PowerUp.cs" />
+    <Compile Include="Assets\Scripts\Extra\Life.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Art\UI Elements\Fonts\manaspc\license.txt" />
