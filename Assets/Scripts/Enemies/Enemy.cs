@@ -121,7 +121,7 @@ public class Enemy : MonoBehaviour
     private void IncreaseMoveSpeed()
     {
         float maxSpeed = 25f;
-        if (maxSpeed > moveSpeed)
+        if (maxSpeed > controller.moveSpeed)
         {
             controller.moveSpeed += 0.2f;
         }

@@ -24,13 +24,13 @@ public class PowerUp : MonoBehaviour
         {
             if (shootingcontroller != null)
             {
-                Debug.Log("Controller is not null");
+              
                 shootingcontroller.fireRate = shootingcontroller.fireRate - fireRateDecrease;
                 Destroy(gameObject);
             }
             else
             {
-                Debug.Log("Controller is null");
+               
             }
           
         }

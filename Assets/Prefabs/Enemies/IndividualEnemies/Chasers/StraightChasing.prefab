@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8022954021460962557}
   - component: {fileID: 4327850106528714602}
   - component: {fileID: 584683058982610388}
+  - component: {fileID: -8070747852088985437}
   m_Layer: 9
   m_Name: StraightChasing
   m_TagString: Untagged
@@ -182,7 +183,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -207,6 +208,25 @@ PolygonCollider2D:
       - {x: 0.42988372, y: 0.07067227}
       - {x: 0.43682837, y: 0.14506364}
       - {x: 0.4403417, y: 0.24401402}
+--- !u!114 &-8070747852088985437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8282131552441171991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d271c85fb6a1e546b37f1f81e5a648d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamId: 1
+  damageAmount: 1
+  hitEffect: {fileID: 0}
+  destroyAfterDamage: 1
+  dealDamageOnTriggerEnter: 0
+  dealDamageOnTriggerStay: 0
+  dealDamageOnCollision: 1
 --- !u!1 &8282131553695226669
 GameObject:
   m_ObjectHideFlags: 0

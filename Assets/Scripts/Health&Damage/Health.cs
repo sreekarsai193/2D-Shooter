@@ -108,7 +108,7 @@ public class Health : MonoBehaviour
     /// </summary>
     void Respawn()
     {
-        transform.position = respawnPosition;
+       //transform.position = respawnPosition;
         currentHealth = defaultHealth;
     }
 
